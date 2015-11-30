@@ -1,4 +1,4 @@
-class GravatarProviderPlugin::UserEmailHash < Noosfero::Plugin::ActiveRecord
+class GravatarProviderPlugin::UserEmailHash < ActiveRecord::Base
   belongs_to :user
 
   attr_accessible :email_md5_hash
